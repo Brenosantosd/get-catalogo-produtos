@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  height: 100px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 15px black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header h1{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 60px;
+    
+}
+
+.nav{
+   margin-top: 60px;
+   margin-right: 10px;
+}
+
+.nav a{
+   margin-right: 10px;
+   font-weight: 600;
+   font-size: 22px;
+}
+
+.produto{
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.189);
+  padding: 20px;
+  margin-top: 60px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.583);
+  background-color: rgba(196, 195, 195, 0.444);
 }
 
-.App-link {
-  color: #61dafb;
+.produto p{
+    max-width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categoria{
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.descricao{
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.produto h1{
+  max-width: 400px;
+}
+
+.produto img{
+    width: 400px;
+    border: 1px solid rgba(50, 50, 50, 0.226);
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.preco{
+  color: black;
+  font-weight: 600;
+}
+
+.cifrao{
+  color: #00af66
 }
